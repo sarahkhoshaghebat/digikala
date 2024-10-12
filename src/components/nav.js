@@ -6,58 +6,48 @@ import {
 
 export const Nav = () => {
   return (
-    <>
-      <div className="nav">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col login">
-              <div>
-                <a>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 10"
-                    id="Cart"
-                  >
-                    <path
-                      d="M7 23a4 4 0 1 0 4 4 4 4 0 0 0-4-4zm0 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm14-6a4 4 0 1 0 4 4 4 4 0 0 0-4-4zm0 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm9-28h-3a1 1 0 0 0-1 .76L25.22 5H2a1 1 0 0 0-.76.34 1 1 0 0 0-.23.8l2 14A1 1 0 0 0 4 21h20a1 1 0 0 0 1-.86l2-13.95.78-3.19H30a1 1 0 0 0 0-2zm-6.87 18H4.87L3.15 7h21.7z"
-                      fill="#464646"
-                      class="color000000 svgShape"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-              <span>|</span>
-              <a href="#">
-                <button>
-                  <div>
-                    <span>
-                      <FontAwesomeIcon
-                        icon={faArrowRightToBracket}
-                        flip="horizontal"
-                      />
-                    </span>
-                  </div>
-                  ورود | ثبت‌نام
-                </button>
-              </a>
-            </div>
-            <div className="col">
-              <div className="searchInput">
-                <input type="text" placeholder="جستجو "></input>
-                <span>
-                  <FontAwesomeIcon
-                    icon={faMagnifyingGlass}
-                    size="2x"
-                    style={{ color: "#cfcece" }}
-                  />
-                </span>
-              </div>
-            </div>
-            <div className="col">
-              <a className="nameBrand">
-                <svg
-                  width="286"
-                  height="44"
+    <nav className="navbar">
+      <div className="container-fluid">
+        <div className="nav-section">
+          <div className="nav-icon">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                id="Cart"
+                viewBox="0 0 30 30"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M7 23a4 4 0 1 0 4 4 4 4 0 0 0-4-4zm0 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm14-6a4 4 0 1 0 4 4 4 4 0 0 0-4-4zm0 6a2 2 0 1 1 2-2 2 2 0 0 1-2 2zm9-28h-3a1 1 0 0 0-1 .76L25.22 5H2a1 1 0 0 0-.76.34 1 1 0 0 0-.23.8l2 14A1 1 0 0 0 4 21h20a1 1 0 0 0 1-.86l2-13.95.78-3.19H30a1 1 0 0 0 0-2zm-6.87 18H4.87L3.15 7h21.7z"
+                  fill="#464646"
+                />
+              </svg>
+            </a>
+          </div>
+          <span>|</span>
+          <a href="#">
+            <button className="login-btn">
+              <FontAwesomeIcon icon={faArrowRightToBracket} flip="horizontal" />
+              ورود | ثبت‌نام
+            </button>
+          </a>
+        </div>
+        <div className="nav-section search-bar">
+          <input type="text" placeholder="جستجو" />
+          <span className="search-icon">
+            <FontAwesomeIcon
+              icon={faMagnifyingGlass}
+              size="lg"
+              style={{ color: "#cfcece" }}
+            />
+          </span>
+        </div>
+        <div className="nav-section logo">
+          <a href="#">
+          <svg
+                  width="195"
+                  height="30"
                   viewBox="0 0 286 44"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -95,11 +85,9 @@ export const Nav = () => {
                     fill="#ED1944"
                   />
                 </svg>
-              </a>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
-    </>
+    </nav>
   );
 };
