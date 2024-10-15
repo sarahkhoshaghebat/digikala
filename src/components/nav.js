@@ -3,12 +3,13 @@ import {
   faMagnifyingGlass,
   faArrowRightToBracket,
 } from "@fortawesome/free-solid-svg-icons";
+import "./nav.css";
 
 export const Nav = () => {
   return (
     <div className="container-fluid">
       <div className="row mt-3 ">
-        <div className="col-2 justify-content-start">
+        <div className="col-2 d-none d-sm-block justify-content-start">
           <a href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +28,6 @@ export const Nav = () => {
           <a href="#">
             <button className="login-btn">
               <span className="text-btn">
-                {" "}
                 ورود | ثبت‌نام
                 <FontAwesomeIcon
                   className="login-icon"
@@ -39,20 +39,20 @@ export const Nav = () => {
             </button>
           </a>
         </div>
-        <div className="col-8 justify-content-end">
-          <div className="search-box justify-content-end">
+        <div className="col-md-8 col-sm-10 d-flex justify-content-end">
+          <div className="search-box col-sm-10">
             <input type="text" placeholder="جستجو" />
-              <span className="search-icon">
-                <FontAwesomeIcon
-                  icon={faMagnifyingGlass}
-                  size="lg"
-                  style={{ color: "#cfcece",marginRight:"10px"}}
-                />
-              </span>
+            <span className="search-icon">
+              <FontAwesomeIcon
+                icon={faMagnifyingGlass}
+                size="lg"
+                style={{ color: "#cfcece", marginRight: "10px" }}
+              />
+            </span>
           </div>
         </div>
-        <div className="col-2 justify-content-end logo-brand">
-        <a href="#">
+        <div className="col-2 d-none d-sm-block justify-content-end logo-brand">
+          <a href="#">
             <svg
               width="195"
               height="30"
@@ -94,10 +94,8 @@ export const Nav = () => {
               />
             </svg>
           </a>
-
         </div>
       </div>
     </div>
   );
 };
-
