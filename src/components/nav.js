@@ -3,7 +3,7 @@ import {
   faMagnifyingGlass,
   faArrowRightToBracket,
 } from "@fortawesome/free-solid-svg-icons";
-import "./nav.css";
+import "./header.css";
 
 export const Nav = () => {
   return (

@@ -59,3 +59,18 @@
     }
   }
   
+  .menu-bar a{
+    color: #62666D;
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .tittle-menu a {
+    color: #3F4064;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .menu-bar span ,.tittle-menu  span {
+    margin-left: 3px;
+  }
