@@ -4,6 +4,7 @@ import {Nav} from './components/nav';
 import { Shop } from './pages/shop/shop';
 import { Cart } from './pages/cart/cart';
 import MenuBar from './components/menuBar';
+import StoryCarousel from "./pages/story bar/storyBar"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Router>
         <Nav/>
         <MenuBar/>
+        <StoryCarousel/>
         <Routes>
           <Route path='/' element={<Shop/>}/>
           <Route path='/cart' element={<Cart/>} />

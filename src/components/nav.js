@@ -51,7 +51,7 @@ export const Nav = () => {
             </span>
           </div>
         </div>
-        <div className="col-2 d-none d-sm-block justify-content-end logo-brand">
+        <div className="col-2 p-0 d-none d-sm-block justify-content-end logo-brand">
           <a href="#">
             <svg
               width="195"
