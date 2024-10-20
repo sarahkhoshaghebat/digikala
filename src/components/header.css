@@ -1,79 +1,74 @@
-
 .login-btn {
-    border: 1px solid #c1c1c1;
-    background-color: transparent;
-    border-radius: 10px;
-    font-size: 14px;
-    align-items: center;
-    width: 134px;
-    height: 40px;
-    color: #0c0c0c;
-  }
-  .text.btn {
-    font-size: 12px;
-    height: 26px !important;
-    width: 100px !important;
-  }
-  .spas {
-    color:#c1c1c1;
-  }
-  .login-icon {
-    margin-left: 5px;
-    color: #545151;
-  }
-  
-  
-  .search-box {
-    background-color: #eeeeee;
-    border-radius: 10px;
+  border: 1px solid #c1c1c1;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 14px;
+  align-items: center;
+  width: 134px;
+  height: 40px;
+  color: #0c0c0c;
+}
+.text.btn {
+  font-size: 12px;
+  height: 26px !important;
+  width: 100px !important;
+}
+.spas {
+  color: #c1c1c1;
+}
+.login-icon {
+  margin-left: 5px;
+  color: #545151;
+}
+
+.search-box {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  border: none;
+  width: 600px;
+  height: 44px;
+
+  input {
     border: none;
-    width: 600px;
-    height: 44px;
-  
-    input {
-      border: none;
-      background-color: #eeeeee;
-      width: 560px;
-      height: 38px;
-      text-align: end;
-      margin-right: 10px;
-      border-radius: 10px;
-    }
-    
+    background-color: #eeeeee;
+    width: 560px;
+    height: 38px;
+    text-align: end;
+    margin-right: 10px;
+    border-radius: 10px;
   }
-  
-  @media (max-width: 768px) {
-    .search-box {
-      width: 100%;
-      height: 38px;
-    }
-  
-    .search-box input {
-      width: 80%;
-      height: 36px;
-      margin-right: 5px;
-    }
-  
-    .search-icon {
-      margin-right: 5px;
-    }
-  }
-  
-  .menu-bar a{
-    color: #62666D;
-    font-size: 13px;
-    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .search-box {
+    width: 100%;
+    height: 38px;
   }
 
-  .tittle-menu a {
-    color: #3F4064;
-    font-size: 14px;
-    text-decoration: none;
+  .search-box input {
+    width: 80%;
+    height: 36px;
+    margin-right: 5px;
   }
 
-  .menu-bar span ,.tittle-menu  span {
-    margin-left: 3px;
+  .search-icon {
+    margin-right: 5px;
   }
+}
 
+.menu-bar a {
+  color: #62666d;
+  font-size: 13px;
+  text-decoration: none;
+}
 
- 
+.tittle-menu a {
+  color: #3f4064;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu-bar span,
+.tittle-menu span {
+  margin-left: 3px;
+}

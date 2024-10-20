@@ -11,7 +11,7 @@ const MenuBar = () => {
           </span>
         </a>
 
-        <div className="collapse navbar-collapse">
+        <div className="collapse navbar-collapse ">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item px-3">
               <a href="#">!در دیجی‌کالا بفروشید</a>
