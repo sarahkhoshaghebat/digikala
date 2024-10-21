@@ -1,39 +1,105 @@
 .story-carousel {
-    padding:5px;
-    background-color: white;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .story {
-    text-align: center;
-    padding: 5px;
-  }
-  
-  .story img {
-    width: 74px;
-    height: 74px;
-    border-radius: 50%;
-    border: 2px solid purple;
-    margin-bottom: 5px;
-    padding: 3px;
-  }
-  
-  .story p {
-    font-size: 12px;
-    color: #333;
-    margin: 0;
-  }
-  
-  .story-link {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .story-link:hover {
-    opacity: 0.8;
-  }
-  
-  .carousel-container{
-    border-top: 1px solid#a2a2a2;
-  }
+  padding: 5px;
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.story {
+  text-align: center;
+  padding: 5px;
+  position: relative;
+  overflow: hidden; /* برای ایجاد جلوه‌ی نیمه‌ی استوری */
+}
+
+.story img {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 2px solid purple;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+
+.story p {
+  font-size: 12px;
+  color: #333;
+  margin: 0;
+}
+
+.story-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.story-link:hover {
+  opacity: 0.8;
+}
+
+.carousel-container {
+  border-top: 1px solid#a2a2a2;
+  overflow: hidden;
+}
+.carousel-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+.slick-prev,
+.slick-next {
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  border: 2px solid#ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: white;
+}
+
+/* جلوگیری از تغییر رنگ پس‌زمینه هنگام کلیک یا فوکوس */
+.slick-prev:focus, .slick-next:focus, .slick-prev:active, .slick-next:active {
+  background-color: white;
+  outline: none;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 20px; 
+  color: #666;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;                  
+  font-size: 20px;                
+  color: #666;
+  content: "\f104";
+}
+.slick-next:before {
+  content: "\f105";  /* استفاده از کاراکتر دلخواه برای فلش بعدی */
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+.slick-slide {
+  transform: translateX(-45%);    /* برای نشان دادن نصف استوری اول */
+  transition: transform 0.5s ease-in-out;   /* انتقال نرم برای حرکت */
+}
+slick-slide.slick-active {
+  transform: translateX(0);   /* استوری فعال کاملاً نشان داده شود */
+}

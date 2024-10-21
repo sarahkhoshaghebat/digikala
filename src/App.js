@@ -5,6 +5,8 @@ import { Shop } from './pages/shop/shop';
 import { Cart } from './pages/cart/cart';
 import MenuBar from './components/menuBar';
 import StoryCarousel from "./pages/story bar/storyBar"
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   return (
