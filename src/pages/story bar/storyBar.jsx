@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "./storyBar.css";
 import stories from "../../data/stories";
 
-
 const StoryCarousel = () => {
   const settings = {
     dots: false,

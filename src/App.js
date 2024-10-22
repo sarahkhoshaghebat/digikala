@@ -6,6 +6,7 @@ import { Cart } from './pages/cart/cart';
 import MenuBar from './components/menuBar';
 import StoryCarousel from "./pages/story bar/storyBar"
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import HomeSlider from './pages/mainHomeSlider/homeSlider';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Nav/>
         <MenuBar/>
         <StoryCarousel/>
+        <HomeSlider/>
         <Routes>
           <Route path='/' element={<Shop/>}/>
           <Route path='/cart' element={<Cart/>} />
