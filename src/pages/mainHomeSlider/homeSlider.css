@@ -1,0 +1,31 @@
+.home-slider {
+  width: 100%;
+  height: 400px;
+}
+
+.slide {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.imgSlider {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slick-dots li button:before {
+  font-family: inherit; /* برای تغییر فونت */
+  content: "_";  /* به جای نقطه خط تیره نمایش بده */
+  color: black;  /* رنگ دلخواه */
+  font-size: 20px;  /* اندازه دلخواه */
+}
+
+.slick-dots li.slick-active button:before {
+  color: red;  /* رنگ خط تیره فعال */
+}
+
