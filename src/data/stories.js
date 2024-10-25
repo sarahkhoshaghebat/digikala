@@ -1,16 +1,16 @@
-import slider from "../images/slider.jpg";
-import sunSkin5 from "../images/5 sun skin.jpg";
-import sunSkin from "../images/sun skin.jpg";
-import coffee from "../images/coffee.jpg";
-import mag from "../images/mag.jpg";
-import phon from "../images/phon.jpg";
-import pixel from "../images/pixel.jpg";
-import hand from "../images/hand.jpg";
-import adventure from "../images/Adventure.jpg";
-import chocolate from "../images/chocolate.jpg";
-import forWork from "../images/for work.jpg";
-import none from "../images/none.jpg";
-import tree from "../images/tree.jpg";
+import slider from "../images/story header/slider.jpg";
+import sunSkin5 from "../images/story header/5 sun skin.jpg";
+import sunSkin from "../images/story header/sun skin.jpg";
+import coffee from "../images/story header/coffee.jpg";
+import mag from "../images/story header/mag.jpg";
+import phon from "../images/story header/phon.jpg";
+import pixel from "../images/story header/pixel.jpg";
+import hand from "../images/story header/hand.jpg";
+import adventure from "../images/story header/Adventure.jpg";
+import chocolate from "../images/story header/chocolate.jpg";
+import forWork from "../images/story header/for work.jpg";
+import none from "../images/story header/none.jpg";
+import tree from "../images/story header/tree.jpg";
 
 const stories = [
     { id: 1, title: "5 تا ضدآفتاب", imgSrc: sunSkin5 },
