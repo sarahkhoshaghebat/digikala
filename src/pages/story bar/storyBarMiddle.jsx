@@ -16,9 +16,21 @@ const StoryBarMiddle = () => {
     <div className="container icon-bar mt-4">
       <div className="icon-item">
         <a href="#">
-          <div className="icon-background">
-            <FontAwesomeIcon icon={faEllipsis} />
-          </div>
+          <svg className="icon-background"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="ellipsis"
+            class="svg-inline--fa fa-ellipsis fa-xl "
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"> 
+            </path>
+          </svg>
           <p>بیشتر</p>
         </a>
       </div>
