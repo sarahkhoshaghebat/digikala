@@ -1,6 +1,4 @@
 import "./storyBar.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 import auctionHome from "../../images/story middle/Auction of the home.png";
 import best from "../../images/story middle/best price.png";
 import auctionMonth from "../../images/story middle/Auction of the month.png";
@@ -16,24 +14,29 @@ const StoryBarMiddle = () => {
     <div className="container icon-bar mt-4">
       <div className="icon-item">
         <a href="#">
-          <svg className="icon-background"
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="ellipsis"
-            class="svg-inline--fa fa-ellipsis fa-xl "
-            role="img"
+          <svg
+            style={{
+              width: "50px",
+              height: "50px",
+              backgroundColor: "#f0f0f0",
+              borderRadius: "50%",
+              padding: "10px",
+              fill: "#888",
+              display: "block",
+              margin: "0 auto 10px",
+            }}
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
+            viewBox="0 0 100 20"
           >
-            <path
-              fill="currentColor"
-              d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"> 
-            </path>
+            <circle cx="15" cy="10" r="5" />
+            <circle cx="50" cy="10" r="5" />
+            <circle cx="85" cy="10" r="5" />
           </svg>
+
           <p>بیشتر</p>
         </a>
       </div>
+
       <div className="icon-item">
         <a href="#">
           <img src={clothes} alt="لباس" />
