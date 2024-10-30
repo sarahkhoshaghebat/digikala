@@ -28,11 +28,10 @@ const StoryBarMiddle = () => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 20"
           >
-            <circle cx="15" cy="10" r="5" />
-            <circle cx="50" cy="10" r="5" />
-            <circle cx="85" cy="10" r="5" />
+            <circle cx="15" cy="10" r="8" />
+            <circle cx="50" cy="10" r="8" />
+            <circle cx="85" cy="10" r="8" />
           </svg>
-
           <p>بیشتر</p>
         </a>
       </div>
