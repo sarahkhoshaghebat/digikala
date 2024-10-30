@@ -8,6 +8,7 @@ import StoryCarousel from "./pages/story bar/storyBar"
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import HomeSlider from './pages/mainHomeSlider/homeSlider';
 import StoryBarMiddle from './pages/story bar/storyBarMiddle';
+import AmazingCart from './pages/main/amazingCart';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <StoryCarousel/>
         <HomeSlider/>
         <StoryBarMiddle/>
+        <AmazingCart/>
         <Routes>
           <Route path='/' element={<Shop/>}/>
           <Route path='/cart' element={<Cart/>} />
