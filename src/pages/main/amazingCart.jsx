@@ -25,7 +25,7 @@ const AmazingCart = () => {
         } else if (hours > 0) {
           return { hours: hours - 1, minutes: 59, seconds: 59 };
         } else {
-          clearInterval(timer); // تایمر متوقف می‌شود زمانی که به 00:00:00 برسد
+          clearInterval(timer);
           return prevTime;
         }
       });
@@ -37,6 +37,51 @@ const AmazingCart = () => {
   return (
     <div className="container containerAmazing">
       <div className="products">
+        <div className="product">
+          <svg
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50"
+              cy="50"
+              r="45"
+              stroke="#00bcd4"
+              stroke-width="4"
+              fill="none"
+            />
+            <line
+              x1="55"
+              y1="50"
+              x2="35"
+              y2="50"
+              stroke="#00bcd4"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <line
+              x1="40"
+              y1="45"
+              x2="35"
+              y2="50"
+              stroke="#00bcd4"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <line
+              x1="40"
+              y1="55"
+              x2="35"
+              y2="50"
+              stroke="#00bcd4"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+          <p>مشاهده همه</p>
+        </div>
         <div className="product">
           <img src={rechageble} alt="Product 1" />
           <p>دریل پیچ گوشتی شارژی</p>
@@ -104,7 +149,6 @@ const AmazingCart = () => {
             fill="#FAFAFA"
           />
         </svg>
-
         <p>مشاهده همه</p>
       </div>
     </div>
