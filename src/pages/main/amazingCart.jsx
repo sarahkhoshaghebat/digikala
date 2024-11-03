@@ -8,7 +8,7 @@ import React, { useState, useEffect } from "react";
 
 const AmazingCart = () => {
   const [time, setTime] = useState({
-    hours: 16,
+    hours: 18,
     minutes: 9,
     seconds: 10,
   });
@@ -39,45 +39,29 @@ const AmazingCart = () => {
       <div className="products">
         <div className="product">
           <svg
-            width="100"
-            height="100"
+            width="52px"
+            height="52px"
             viewBox="0 0 100 100"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle
               cx="50"
               cy="50"
-              r="45"
+              r="48"
               stroke="#00bcd4"
-              stroke-width="4"
+              strokeWidth="4"
               fill="none"
             />
-            <line
-              x1="55"
-              y1="50"
-              x2="35"
-              y2="50"
+
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M52 40 L42 50 L52 60 M42 50 L67 50"
               stroke="#00bcd4"
-              stroke-width="4"
-              stroke-linecap="round"
-            />
-            <line
-              x1="40"
-              y1="45"
-              x2="35"
-              y2="50"
-              stroke="#00bcd4"
-              stroke-width="4"
-              stroke-linecap="round"
-            />
-            <line
-              x1="40"
-              y1="55"
-              x2="35"
-              y2="50"
-              stroke="#00bcd4"
-              stroke-width="4"
-              stroke-linecap="round"
+              strokeWidth="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <p>مشاهده همه</p>
