@@ -1,57 +1,76 @@
 .containerAmazing {
-    display: flex;
-    justify-content: space-between;
-    background-color:#d22c4e;
-    padding: 20px;
-    border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #d22c4e;
+  padding: 20px;
+  border-radius: 10px;
+  a {
+    text-decoration: none;
+    color: #3f4064;
   }
-  
-  .products {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .product {
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 160px;
-    height: 254px;
-  }
-  
-  .product img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .discount {
-    color: red;
-    font-weight: bold;
-  }
-  
-  .offer {
-    text-align: center;
+}
+
+.products {
+  display: flex;
+  gap: 10px;
+}
+
+.product {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 160px;
+  height: 254px;
+}
+
+.product img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.discount {
+  color: red;
+  font-weight: bold;
+}
+
+.offer {
+  text-align: center;
+  color: white;
+  a {
+    text-decoration: none;
     color: white;
+    text-align: center;
   }
-  
-  .offer h2 {
-    margin: 0;
+  svg {
+    align-items: center;
   }
-  
-  .timer {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    font-size: 20px;
-    margin: 10px 0;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.timer span {
+  background-color: white;
+  color: #ff6161;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.flash {
+  margin: 50px 0 10px 0;
+  padding: auto;
+}
+
+@media (max-width: 768px) {
+  .containerAmazing {
+    overflow: auto;
+    margin-top: 10px;
   }
-  
-  .timer span {
-    background-color: white;
-    color: #ff6161;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
+}

@@ -37,74 +37,88 @@ const AmazingCart = () => {
   return (
     <div className="container containerAmazing">
       <div className="products">
-        <div className="product">
-          <svg
-            width="52px"
-            height="52px"
-            viewBox="0 0 100 100"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="50"
-              cy="50"
-              r="48"
-              stroke="#00bcd4"
-              strokeWidth="4"
+        <a href="/">
+          <div className="product">
+            <svg
+              className="flash" 
+              width="52px"
+              height="52px"
+              viewBox="0 0 100 100"
               fill="none"
-            />
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="50"
+                cy="50"
+                r="48"
+                stroke="#00bcd4"
+                strokeWidth="4"
+                fill="none"
+              />
 
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M52 40 L42 50 L52 60 M42 50 L67 50"
-              stroke="#00bcd4"
-              strokeWidth="4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-          <p>مشاهده همه</p>
-        </div>
-        <div className="product">
-          <img src={rechageble} alt="Product 1" />
-          <p>دریل پیچ گوشتی شارژی</p>
-          <p>
-            تومان 1,745,000 <span className="discount">40%</span>
-          </p>
-        </div>
-        <div className="product">
-          <img src={nikova} alt="Product 2" />
-          <p>هواپز نیکووا</p>
-          <p>
-            تومان 8,999,000 <span className="discount">50%</span>
-          </p>
-        </div>
-        <div className="product">
-          <img src={eaude} alt="Product 3" />
-          <p>ادوپرفیوم مردانه</p>
-          <p>
-            تومان 3,240,000 <span className="discount">26%</span>
-          </p>
-        </div>
-        <div className="product">
-          <img src={speaker} alt="Product 4" />
-          <p>اسپیکر بلوتوثی</p>
-          <p>
-            تومان 2,349,000 <span className="discount">43%</span>
-          </p>
-        </div>
-        <div className="product">
-          <img src={pergent} alt="Product 5" />
-          <p>قرص پرگنت بیوتی</p>
-          <p>
-            تومان 117,000 <span className="discount">78%</span>
-          </p>
-        </div>
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M52 40 L42 50 L52 60 M42 50 L67 50"
+                stroke="#00bcd4"
+                strokeWidth="4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            <p>مشاهده همه</p>
+          </div>
+        </a>
+        <a href="/">
+          <div className="product">
+            <img src={rechageble} alt="Product 1" />
+            <p>دریل پیچ گوشتی شارژی</p>
+            <p>
+              تومان 1,745,000 <span className="discount">40%</span>
+            </p>
+          </div>
+        </a>
+        <a href="/">
+          <div className="product">
+            <img src={nikova} alt="Product 2" />
+            <p>هواپز نیکووا</p>
+            <p>
+              تومان 8,999,000 <br/>
+              <span className="discount">50%</span>
+              </p>
+          </div>
+        </a>
+        <a href="/">
+          <div className="product">
+            <img src={eaude} alt="Product 3" />
+            <p>ادوپرفیوم مردانه</p>
+            <p>
+              تومان 3,240,000 <span className="discount">26%</span>
+            </p>
+          </div>
+        </a>
+        <a href="/">
+          <div className="product">
+            <img src={speaker} alt="Product 4" />
+            <p>اسپیکر بلوتوثی</p>
+            <p>
+              تومان 2,349,000 <span className="discount">43%</span>
+            </p>
+          </div>
+        </a>
+        <a href="/">
+          <div className="product">
+            <img src={pergent} alt="Product 5" />
+            <p>قرص پرگنت بیوتی</p>
+            <p>
+              تومان 117,000 <span className="discount">78%</span>
+            </p>
+          </div>
+        </a>
       </div>
-      <div className="offer">
-        <h2>پیشنهاد شگفت‌انگیز</h2>
-        <div className="timer">
+      <div className="offer p-3">
+        <h4>پیشنهاد شگفت‌انگیز</h4>
+        <div className="timer mt-4">
           <span>{String(time.hours).padStart(2, "0")}</span> :
           <span>{String(time.minutes).padStart(2, "0")}</span> :
           <span>{String(time.seconds).padStart(2, "0")}</span>
@@ -133,7 +147,34 @@ const AmazingCart = () => {
             fill="#FAFAFA"
           />
         </svg>
-        <p>مشاهده همه</p>
+        <div>
+          <a href="#">
+            <svg
+              width="18px"
+              height="18px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#ffffff"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L9.41421 12L15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289Z"
+                  fill="#ffffff"
+                ></path>
+              </g>
+            </svg>
+            مشاهده همه
+          </a>
+        </div>
       </div>
     </div>
   );

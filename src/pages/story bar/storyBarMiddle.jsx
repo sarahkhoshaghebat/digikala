@@ -11,7 +11,7 @@ import usedMobile from "../../images/story middle/Used mobile phone.png";
 
 const StoryBarMiddle = () => {
   return (
-    <div className="container icon-bar mt-4">
+    <div className="container icon-bar mt-4 ">
       <div className="icon-item">
         <a href="#">
           <svg

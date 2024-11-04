@@ -31,7 +31,7 @@ const HomeSlider = () => {
       <Slider {...settings}>
         <div className="slide slide1">
           <a href="#">
-            <img className="imgSlider" src={plus} alt="Slide 1" />
+            <img className="imgSlider" src={plus} alt="Slide 1"/>
           </a>
         </div>
         <div className="slide slide2">
