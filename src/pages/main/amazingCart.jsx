@@ -40,7 +40,7 @@ const AmazingCart = () => {
         <a href="/">
           <div className="product">
             <svg
-              className="flash" 
+              className="flash"
               width="52px"
               height="52px"
               viewBox="0 0 100 100"
@@ -83,9 +83,9 @@ const AmazingCart = () => {
             <img src={nikova} alt="Product 2" />
             <p>هواپز نیکووا</p>
             <p>
-              تومان 8,999,000 <br/>
+              تومان 8,999,000 <br />
               <span className="discount">50%</span>
-              </p>
+            </p>
           </div>
         </a>
         <a href="/">

@@ -4,6 +4,7 @@
   background-color: #d22c4e;
   padding: 20px;
   border-radius: 10px;
+  overflow: auto;
   a {
     text-decoration: none;
     color: #3f4064;
@@ -33,6 +34,7 @@
 .discount {
   color: red;
   font-weight: bold;
+  display: block;
 }
 
 .offer {
@@ -68,9 +70,26 @@
   padding: auto;
 }
 
-@media (max-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .containerAmazing {
     overflow: auto;
-    margin-top: 10px;
+    margin-top: 15px;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .products {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product {
+    width: 200px;
+    margin: 10px 0;
+  }
+
+  .timer {
+    font-size: 18px;
   }
 }

@@ -39,6 +39,10 @@
   }
 }
 
+.logo-brand {
+  margin-right: 0 !important;
+}
+
 @media (max-width: 768px) {
   .search-box {
     width: 100%;
@@ -56,10 +60,36 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .container-nav .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .search-box .search-icon {
+    width: auto;
+    height: 38px;
+  }
+}
+@media (max-width: 1000px) {
+  .container-nav .login-btn,
+  .container-nav .logo-brand,
+  .container-nav .spas {
+    display: none;
+  }
+  .search-box .search-icon {
+    width: auto;
+    height: 38px;
+  }
+}
+
+/* menu bar css */
+
 .menu-bar a {
   color: #62666d;
   font-size: 13px;
   text-decoration: none;
+  padding: 0 15px; /* فاصله بین آیتم‌ها */
 }
 
 .tittle-menu a {
@@ -71,4 +101,17 @@
 .menu-bar span,
 .tittle-menu span {
   margin-left: 3px;
+}
+
+.menu-bar {
+  display: flex;
+  flex-wrap: nowrap; /* عناصر را در یک خط نگه می‌دارد */
+  overflow-x: auto;
+  white-space: nowrap; /* جلوگیری از شکسته شدن خطوط */
+}
+
+@media (max-width: 1024px) {
+  .menu-bar {
+    display: none; /* مخفی کردن در صفحات کوچکتر از iPad */
+  }
 }

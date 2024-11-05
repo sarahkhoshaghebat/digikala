@@ -7,7 +7,7 @@ import "./header.css";
 
 export const Nav = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid container-nav">
       <div className="row mt-3 ">
         <div className="col-2 d-none d-sm-block justify-content-start">
           <a href="#">

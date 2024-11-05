@@ -1,5 +1,7 @@
 import { faBars, faBasketShopping,faFire, faTachographDigital, faTag, faLocationDot, faPercent} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./header.css";
+
 const MenuBar = () => {
   return (
     <nav className="navbar navbar-expand-lg d-none d-sm-block">
