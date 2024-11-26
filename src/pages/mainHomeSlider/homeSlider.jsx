@@ -13,6 +13,7 @@ import promate from "../../images/slider/promate.webp";
 import respi from "../../images/slider/Respi.gif";
 import shoes from "../../images/slider/shoes.webp";
 import week from "../../images/slider/week.webp";
+import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 
 const HomeSlider = () => {
   const settings = {
@@ -27,7 +28,7 @@ const HomeSlider = () => {
   };
 
   return (
-    <div className="home-slider">
+    <div className=" home-slider">
       <Slider {...settings}>
         <div className="slide slide1">
           <a href="#">
