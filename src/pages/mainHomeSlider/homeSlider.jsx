@@ -80,8 +80,6 @@ const HomeSlider = () => {
             <img className="imgSlider" src={week} alt="Slide 10" />
           </a>
         </div>
-
-        
       </Slider>
     </div>
   );
