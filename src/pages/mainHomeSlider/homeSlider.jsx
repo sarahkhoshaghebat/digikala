@@ -81,8 +81,6 @@ const HomeSlider = () => {
           </a>
         </div>
       </Slider>
-
-      
     </div>
   );
 };
