@@ -86,3 +86,8 @@ const HomeSlider = () => {
 };
 
 export default HomeSlider;
+
+
+
+
+
